@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* common css */
+/* 헤더 스타일 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+header.active {
+    color: rgb(14, 14, 14);
+    background-color: #fff;
+    box-shadow: 0 30px 60px 12px rgb(0 0 33 / 5%), 0 4px 24px 0 rgb(0 0 33 / 5%), 0 0 1px 0 rgb(0 0 33 / 9%);
+}
+header .w-header {
+    display: block;
+}
+header .m-header {
+    display: none;
+}
+header .logo {
+    float: left;
+    font-family: "AppleSDGothicNeoB", "sans-serif";
+}
+header.active .logo{
+    color: #1f90ff;
+}
+header .logo-white {
+    display: block;
+}
+header .logo-blue {
+    display: none;
+}
+header.active .logo-blue {
+    display: block;
+}
+header.active .logo-white {
+    display: none;
+}
+header .logo img {
+    width: 30px;
+    margin-top: 18px;
+}
+header nav ul li {
+    color: rgb(14, 14, 14);;
+}
+header nav ul li:hover {
+    font-family: "AppleSDGothicNeoB", "sans-serif";
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header .w-header nav {
+    float: right;
+}
+header .w-header nav ul li {
+    float: left;
+    margin-right: 10px;
+}
+header .m-header .menu {
+    float: right;
+    width: 23px;
+    margin-top: 18px;
+}
+header .m-header .close {
+    width: 38px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+header .m-header nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -100vh;
+    background-color: #fff;
+    transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+header .m-header nav.active {
+    right: 0;
+}
+header .m-header nav ul {
+    margin-top: 35px;
+}
+header .m-header nav ul li {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -o-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -o-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -moz-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99), -moz-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+.m-header nav.active li {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    opacity: 1;
+}
+.m-header nav li:nth-child(1) {
+    transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
+    -webkit-transition-delay: 0.35s;
+    -o-transition-delay: 0.35s;
+}
+.m-header nav li:nth-child(2) {
+    transition-delay: 0.42s;
+    -moz-transition-delay: 0.42s;
+    -webkit-transition-delay: 0.42s;
+    -o-transition-delay: 0.42s;
+}
+.m-header nav li:nth-child(3) {
+    transition-delay: 0.49s;
+    -moz-transition-delay: 0.49s;
+    -webkit-transition-delay: 0.49s;
+    -o-transition-delay: 0.49s;
+}
+/* 레이아웃 공통 스타일  */
+section {
+    width: 100%;
+    min-height: calc(100vh - 197px);
+}
+.inner {
+    width: 95%;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+article {
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+    padding: 2vh 0;
+    overflow: hidden;
+}
+article.sub-section {
+    padding: 22vh 0;
+}
+h2.main-title {
+    font-family: "AppleSDGothicNeoM", "sans-serif";
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    line-height: 1.3;
+    -webkit-transform: translateY(100px) scale(0);
+    transform: translateY(100px) scale(0);
+    opacity: 0;
+    color: #000;
+}
+h2.main-title.active {
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s, opacity 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s;
+    transition: transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s, opacity 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s;
+}
+p.sub-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-family: "AppleSDGothicNeoL", "sans-serif";
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    color: #000;
+}
+a.more-btn {
+    font-family: "AppleSDGothicNeoB", "sans-serif";
+    font-size: 18px;
+    color: #1f90ff;
+    margin-top: 3.5vh;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+a.more-btn img {
+    vertical-align: middle;
+    width: 30px;
+}
+p.sub-text.active, 
+a.more-btn.active  {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s;
+    transition: transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0.0001s;
+}
+footer {
+    padding: 3vh 0;
+    background-color: #f7f8fa;
+}
+footer .sns-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer .sns-link li {
+    display: inline-block;
+}
+footer .sns-link li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+footer .sns-link li a img {
+    width: 20px;
+    vertical-align: sub;
+    opacity: 0.7;
+}
+footer .copy {
+    font-size: 12px;
+    text-align: center;
+    font-family: "AppleSDGothicNeoB", "sans-serif";
+}
+/* laptop 1024 기준 */
+@media only screen and (max-width:1024px) {
+    html {font-size: 95% !important;}
+    h2.main-title {font-size: 1.9rem;}
+}
+/* pad device */
+@media only screen and (max-width:768px) {
+    article.sub-section {padding: 4vh 0;}
+    h2.main-title,p.sub-text {text-align: center;}
+    a.more-btn {display: block; text-align: center;}
+}
+/* mobile device */
+@media only screen and (max-width:550px) {
+    html {font-size: 90% !important;}
+    header .w-header {display: none;}
+    header .m-header {display: block;}
+    h2.main-title {font-size: 1.6rem;}
+    p.sub-text {font-size: 1rem;}
+    a.more-btn {font-size: 15px;}
+    a.more-btn img {width: 25px;}
+}
+@media only screen and (max-width:320px) {
+    html {font-size: 80% !important;}
+    h2.main-title {font-size: 1.4rem;}
+}
+
