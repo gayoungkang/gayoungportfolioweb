@@ -28,7 +28,6 @@ const html = document.querySelector('html');
   if ( navigator.platform ) { 
     if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
       //mobile 
-      alert('mobile 접속!!!!!!!'); 
       window.addEventListener("orientationchange", function() {
         console.log(window.orientation)
         if(window.orientation != undefined) {
@@ -45,6 +44,5 @@ const html = document.querySelector('html');
     });
     } else { 
       //pc 
-      alert('pc 접속'); 
   } 
 }
