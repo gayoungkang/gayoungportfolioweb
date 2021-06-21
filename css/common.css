@@ -232,7 +232,7 @@ footer .copy {
     h2.main-title {font-size: 1.9rem;}
 }
 /* pad device */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:900px) {
     article.sub-section {padding: 4vh 0;}
     h2.main-title,p.sub-text {text-align: center;}
     a.more-btn {display: block; text-align: center;}

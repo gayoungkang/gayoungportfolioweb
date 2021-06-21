@@ -461,10 +461,11 @@
 }
 .workSpace-article .col-2 .slide-img {
     width: 100%;
-    height: 328px;
+    height: 100%;
+    min-height: 36vh;
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    /* background-color: #000; */
     border-radius: 12px;
 }
 .workSpace-article .col-2 .slide-img li{
@@ -472,8 +473,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    margin-top: 22px;
-    height: 306px;
+    padding-top: 6%;
     background-color: #000;
     transform: translateX(512px);
 }
@@ -560,8 +560,9 @@
     vertical-align: middle;
 }
 /* pad device */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:900px) {
     .main-article .wrap {left: 50%; transform: translate(-50%, -50%);}
+    .main-article .back-animation .circle {width: 400px; height: 400px;}
     .main-article ul li {text-align: center;}
     .about-acticle .wrap_about > .col-1,.about-acticle .wrap_about .col-2,
     .services-acticle .wrap_services .col-1,.services-acticle .wrap_services .col-2,
@@ -581,6 +582,12 @@
     .workSpace-article .col-1 .tab-contents {text-align: center;}
     .workSpace-article .col-2 {max-width: 500px; margin: 0 auto; margin: 0 auto; margin-top: 10%;}
     .workSpace-article {padding: 8vh 0 !important}
+    .workSpace-article .col-1 .tab-wrap {overflow-x: scroll; width: 400px; -ms-overflow-style: none;}
+    .workSpace-article .col-1 .tab-wrap::-webkit-scrollbar {display:none;}
+    .workSpace-article .col-1 .tab-btn {overflow: hidden; width: 500px;}
+    .workSpace-article .col-2 {margin-top: 0;}
+    .workSpace-article .col-2 {max-width: 426px;}
+    .workSpace-article .col-2 .slide-img {height: 266px;}
 }
 /* mobile device */
 @media only screen and (max-width:550px) {
@@ -593,12 +600,9 @@
     .services-acticle .wrap_services .col-1 li {width: 80px; height: 80px; line-height: 80px;}
     .services-acticle .wrap_services .col-1 li img {width: 37px;}
     .workSpace-article {padding: 16vh 0 !important;}
-    .workSpace-article .col-2 {margin-top: 0;}
+    /* .workSpace-article .col-2 {margin-top: 0;}
     .workSpace-article .col-2 {max-width: 426px;}
-    .workSpace-article .col-2 .slide-img {height: 266px;}
-    .workSpace-article .col-1 .tab-wrap {overflow-x: scroll; width: 400px; -ms-overflow-style: none;}
-    .workSpace-article .col-1 .tab-wrap::-webkit-scrollbar {display:none;}
-    .workSpace-article .col-1 .tab-btn {overflow: hidden; width: 500px;}
+    .workSpace-article .col-2 .slide-img {height: 266px;} */
 }
 @media only screen and (max-width:380px) {
     .about-acticle .wrap_about .col-2 ul li {width: 260px;}

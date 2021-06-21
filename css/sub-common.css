@@ -173,7 +173,7 @@ table {
     border: 1px solid #ffaf00;
 }
 /* pad device */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:900px) {
     .sub-section .main-article {padding-top: 6vh;}
     .sub-section .main-article .col-1 {float: none; width: 100%;}
     .sub-section .main-article .col-2 {float: none; width: 100%; margin-top: -10px;}
