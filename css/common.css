@@ -226,13 +226,25 @@ footer .copy {
     text-align: center;
     font-family: "AppleSDGothicNeoB", "sans-serif";
 }
+/* 모바일 화면단 강제로 가로모드로 변환하기 */
+@media( orientation: portrait ){
+    html {
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vh;
+      height: 100vw;
+    }
+  }
 /* laptop 1024 기준 */
 @media only screen and (max-width:1024px) {
     html {font-size: 95% !important;}
     h2.main-title {font-size: 1.9rem;}
 }
 /* pad device */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:900px) {
     article.sub-section {padding: 4vh 0;}
     h2.main-title,p.sub-text {text-align: center;}
     a.more-btn {display: block; text-align: center;}
