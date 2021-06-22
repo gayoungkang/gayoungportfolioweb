@@ -54,7 +54,7 @@ function scrollMotion() {
   const workSpaceIframe = document.querySelector('.workSpace-article .col-2');
   const workSpaceTabBtn = document.querySelector('.workSpace-article .col-1 .tab-wrap');
   const workSpaceTabContent = document.querySelector('.workSpace-article .col-1 .tab-contents');
-  // servicesacticle 이벤트
+  // aboutacticle 이벤트
 	document.addEventListener('scroll', function (){
     for(let index=0; index < aboutLists.length; index++) {
       if(window.pageYOffset >= aboutActicleTop - marginT) {
@@ -94,7 +94,7 @@ function scrollMotion() {
         servicesTitle.classList.remove('active');
         servicesSubTitle.classList.remove('active');
         servicesBtn.classList.remove('active');
-      } 
+      }
     }
     // workSpacearticle 이벤트 
     if(window.pageYOffset >= workSpaceArticleTop - marginT) {

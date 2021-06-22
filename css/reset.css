@@ -28,7 +28,7 @@ body {
     height: 100%;
     min-height: 100vh;
     line-height: 1;
-    font-family: "AppleSDGothicNeoL", sans-serif;
+    font-family: "AppleSDGothicNeoL", "sans-serif";
     font-size: 15px !important;
     color: #333333;
     background-color: #ffffff;
@@ -124,28 +124,28 @@ input:-webkit-autofill:active {
 /* font-face */
 @font-face {
     font-family: "AppleSDGothicNeoB";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/AppleSDGothicNeoB.woff") format("woff");
+    src: local(※), url("../font/AppleSDGothicNeoB.woff") format("woff");
 }
 @font-face {
     font-family: "AppleSDGothicNeoM";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/AppleSDGothicNeoM.woff") format("woff");
+    src: local(※), url("../font/AppleSDGothicNeoM.woff") format("woff");
 }
 @font-face {
     font-family: "AppleSDGothicNeoL";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/AppleSDGothicNeoL.woff") format("woff");
+    src: local(※), url("../font/AppleSDGothicNeoL.woff") format("woff");
 }
 @font-face {
     font-family: "Noto Sans KR";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/noto-sans-kr-v12-korean-regular.woff") format("woff");
+    src: local(※), url("../font/noto-sans-kr-v13-korean-300.woff") format("woff");
     font-weight: 300;
 }
 @font-face {
     font-family: "Noto Sans KR";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/noto-sans-kr-v12-korean-500.woff") format("woff");
+    src: local(※), url("../font/noto-sans-kr-v13-korean-regular.woff") format("woff");
     font-weight: 400;
 }
 @font-face {
     font-family: "Noto Sans KR";
-    src: local(※), url("https://service.yanadoocdn.com/youcandoo/assets/font/noto-sans-kr-v12-korean-700.woff") format("woff");
+    src: local(※), url("../font/noto-sans-kr-v13-korean-700.woff") format("woff");
     font-weight: 700;
 }
